@@ -9,12 +9,9 @@ menu:
   Contact: /contact
   Archives: /archives
 
-# Miscelaneous
-favicon: /favicon.ico
 
-# stylesheets loaded in the <head>
-stylesheets:
+post: 
+  showComments: false
 
-# scripts loaded in the end of the body
-scripts:
-- /js/roam.js
+# for seo
+keywords: roam 
