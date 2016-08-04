@@ -1,0 +1,43 @@
+{
+  "name": "roam-hexo-theme",
+  "version": "1.0.0",
+  "description": "a hexo theme development by Roam Tang",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TRoam/roam-hexo-theme.git"
+  },
+  "keywords": [
+    "theme",
+    "roam",
+    "hexo"
+  ],
+  "author": "Roam Tang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TRoam/roam-hexo-theme/issues"
+  },
+  "homepage": "https://github.com/TRoam/roam-hexo-theme#readme",
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.9.0",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.9.1",
+    "jquery": "^3.1.0",
+    "materialize-css": "^0.97.7",
+    "zenscroll": "^3.1.0"
+  }
+}
