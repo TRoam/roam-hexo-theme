@@ -10,6 +10,7 @@ menu:
   Archives: /archives
 
 
+# post configuration
 post: 
   showComments: false
 
