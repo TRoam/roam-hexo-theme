@@ -2,3 +2,12 @@ title:
   archives: Archives
   category: Category
   tag: Tags
+
+home_nav:
+  blog: Blog
+  demo: Demo
+  github: Github
+  about: About
+
+footer: 
+    theme: Theme

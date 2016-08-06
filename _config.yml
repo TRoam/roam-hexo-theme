@@ -1,3 +1,4 @@
+# theme config
 
 # html lang
 language: en
@@ -9,10 +10,27 @@ menu:
   Contact: /contact
   Archives: /archives
 
+home_nav: 
+  - name: blog  # the key of the home_nav.blog in i18n 
+    url: /archvies
+    target_blank: false # open in the same page
+  - name: demo # i18n key home_nav.demo
+    url: /demo
+    target_blank: false 
+  - name: github 
+    url: https://github.com/TRoam
+    target_blank: true # open in new tab
+  - name: about 
+    url: /about
+    target_blank: false  
+
+home_page:
+  background: /images/backgroud.jpeg
+  show_post: false # show posts or not in home page 
 
 # post configuration
 post: 
-  showComments: false
+  show_comments: false
 
 # for seo
 keywords: roam 

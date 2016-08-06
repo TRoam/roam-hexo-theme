@@ -6,10 +6,9 @@
     <%- partial('partials/fab')%>
 
     <%- body %>
-
     <%- partial('partials/modal') %>
 
-    <% if (theme.post.showComments && page.layout === 'post'){ %>
+    <% if (theme.post.show_comments && page.layout === 'post'){ %>
     <%- partial('partials/comments', {className: 'comments-post'}) %>
     <% } else if (page.comments) { %>
     <%- partial('partials/comments', {className: 'comments-' + page.layout}) %>

@@ -7,6 +7,7 @@ import sourcemaps from 'gulp-sourcemaps';
 import reveasy from 'gulp-rev-easy' 
 import concat from 'gulp-concat'
 import uglify from 'gulp-uglify'
+import postcss from 'gulp-postcss'
 
 import path from 'path'
 
@@ -26,14 +27,14 @@ gulp.task('sass', () =>  {
     .pipe(sass({
       outputStyle: 'compressed'
     }).on('error', sass.logError))
-    .pipe(postcss([autoprefixer()]))
+    .pipe(concat('style.css'))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./source/css'));
 });
 
 gulp.task('scripts', () => {
   
-  return gulp.src(`${dir.js}/**/*.js`)
+  return gulp.src(['./node_modules/jquery/dist/jquery.min.js',`${dir.js}/**/*.js`])
     .pipe(concat('bundle.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./source'));

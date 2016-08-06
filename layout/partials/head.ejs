@@ -25,7 +25,8 @@
   <% } %>
 
   <%- open_graph() %>
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/css/style.css?v=028c63b1" rel="stylesheet">
   <% if (theme.rss){ %>
     <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
@@ -33,8 +34,6 @@
   <% if (theme.favicon){ %>
     <link rel="icon" href="<%- config.favicon %>">
   <% } %>
-
-  <%- partial('style') %>
 
   <% if (theme.personal_style){ %>
     <%- css(theme.personal_style) %>
