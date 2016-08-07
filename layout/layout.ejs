@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="<%=config.language%>">
 
-  <%- partial('partials/head') %>
+  <%- partial('partials/head')%>
   <body>
-    <%- partial('partials/fab')%>
+    <% if(!is_home()){ %>
+    <%- partial('partials/fab',{},{cache: true})%>
+    <% } %>
 
     <%- body %>
     <%- partial('partials/modal') %>
@@ -15,7 +17,7 @@
     <% } %>
 
 
-    <%- partial('partials/footer') %>
+    <%- partial('partials/footer',{},{cache: true}) %>
 
     <%- partial('partials/load-script') %>
   </body>

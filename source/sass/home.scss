@@ -1,8 +1,43 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-font-smoothing: antialiased;
+}
+
+$home-title: #fff;
+$font-black: #343434;
+
 .home-content {
   background-size: cover;
   height: 100vh;
   position: relative;
   z-index: -1;
+
+  h3 {
+    color: $home-title;
+  }
+
+  .chip {
+    cursor: pointer;
+
+    a {
+      background-color: transparent;
+      box-shadow: none;
+      color: $font-black;
+      height: 36px;
+      transition: background-color .2s;
+      vertical-align: middle;
+    }
+  }
+
+  .chip:hover {
+    background-color: rgba(0, 0, 0, .1);
+    box-shadow: none;
+    cursor: pointer;
+  }
 }
 
 .home-title-card {
@@ -13,8 +48,19 @@
   top: 15%;
 }
 
+.home-nav {
+  animation: txt5 1s;
+  background: rgba(0, 0, 0, .5) none repeat scroll 0 0;
+  padding: 1.3em 0 0 1.5em;
+  position: absolute;
+  right: 25%;
+  top: 40%;
+  width: 20%;
+  will-change: transform;
+}
+
 .theme-footer {
-  bottom: 0;
+  bottom: 10px;
   left: 0;
   padding-bottom: 10px;
   position: absolute;

@@ -5,14 +5,26 @@ language: en
 
 # main menu navigation
 menu:
-  Home: /
-  About: /about
-  Contact: /contact
-  Archives: /archives
+  - name: home
+    url: /
+    icon: 
+    color: red # color please according to the google color page : http://materializecss.com/color.html 
+  - name: archives
+    url: /archives
+    icon: assignment
+    color: green
+  - name: tags
+    url: /tags
+    icon: label_outline
+    color: yellow darken-1
+  - name: about
+    url: /about
+    icon: assignment_ind
+    color: blue
 
 home_nav: 
   - name: blog  # the key of the home_nav.blog in i18n 
-    url: /archvies
+    url: /archives
     target_blank: false # open in the same page
   - name: demo # i18n key home_nav.demo
     url: /demo

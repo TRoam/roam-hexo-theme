@@ -1,13 +1,15 @@
-title: 
-  archives: Archives
-  category: Category
-  tag: Tags
-
 home_nav:
   blog: Blog
   demo: Demo
   github: Github
   about: About
 
+menu:
+  home: Home
+  archives: Archives
+  tags: Tags
+  about: About
+
 footer: 
     theme: Theme
+
