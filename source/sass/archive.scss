@@ -1,0 +1,160 @@
+$item-post-dot: #ddd;
+$date-color: #888;
+$title-color: #333;
+$link-hover: #26a69a;
+$year-text-color: #222;
+
+
+$year-2: #ab47bc;
+$year-1: #ec407a;
+$year-0: #ffab91;
+$year-5: #69f0ae;
+$year-4: #84ffff;
+$year-3: #2196f3;
+
+
+.page-header {
+  margin-bottom: 30px;
+  position: relative;  
+
+  .box-blog-info {
+    display: block;
+    margin-left: -30px;
+
+    .info {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .avatar {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .slogan {
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
+
+
+
+  .avatar img {
+    border-radius: 50%;
+    height: 60px;
+    vertical-align: middle;
+    width: 60px;
+  }
+}
+
+.list-post {
+  line-height: 2.8em;
+
+  .item-post {
+    height: 46px;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .item-post:before {
+    background: $item-post-dot;
+    border-radius: 50%;
+    content: ' ';
+    height: 8px;
+    left: -2px;
+    margin-left: -4px;
+    margin-top: -7px;
+    position: absolute;
+    top: 50%;
+    width: 8px;
+  }
+
+  .item-year {
+    margin-top: 40px;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .item-year:before {
+    border-radius: 50%;
+    content: ' ';
+    height: 10px;
+    left: -2px;
+    margin-left: -5px;
+    margin-top: -6px;
+    position: absolute;
+    top: 50%;
+    width: 10px;
+  }
+
+  .text-year {
+    color: $year-text-color;
+    font-family: 'calligraffittiregular';
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .year-badge {
+    font-size: 12px;
+    margin-left: 10px;
+    min-width: 3rem;
+    position: absolute;
+    text-align: center;
+  }
+
+  .item-year-2:before {
+    background: $year-2;
+  }
+
+  .item-year-1:before {
+    background: $year-1;
+  }
+
+  .item-year-0:before {
+    background: $year-0;
+  }
+
+  .item-year-5:before {
+    background: $year-5;
+  }
+
+  .item-year-4:before {
+    background: $year-4;
+  }
+
+  .item-year-3:before {
+    background: $year-3;
+  }
+
+  .post-date {
+    color: $date-color;
+    font-size: 12px;
+  } 
+
+  .post-title {
+    color: $title-color;
+    font-size: 16px;
+    font-weight: normal;
+    max-width: 430px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    transition-duration: .5s;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  .post-title:hover {
+    color: $link-hover;
+  }
+
+  .text-year:hover {
+    color: $link-hover;
+  }
+}

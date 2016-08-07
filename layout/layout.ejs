@@ -6,8 +6,8 @@
     <% if(!is_home()){ %>
     <%- partial('partials/fab',{},{cache: true})%>
     <% } %>
-
-    <%- body %>
+    <div class="container">
+    <%- body %></div>
     <%- partial('partials/modal') %>
 
     <% if (theme.post.show_comments && page.layout === 'post'){ %>

@@ -22,7 +22,7 @@ gulp.task('default',['sass','scripts'],() => {
 });
 
 gulp.task('sass', () =>  {
-  return gulp.src('./source/sass/*.scss')
+  return gulp.src('./source/sass/style.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
       outputStyle: 'compressed'
