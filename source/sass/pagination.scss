@@ -1,0 +1,36 @@
+@import 'variables'; 
+
+.pagination {
+
+  .page-number {
+    border-radius: 50%;
+    color: $pagination-number;
+    display: inline-block; 
+    font-family: 'calligraffittiregular';
+    font-size: 15px;
+    font-weight: bold;
+    height: 28px;
+    line-height: 30px;
+    margin: auto 6px;
+    text-align: center;
+    width: 28px;
+  } 
+
+  .extend {
+    border-radius: 50%;
+    color: $pagination-number;
+    display: inline-block;
+    font-size: 12px;
+    height: 28px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  a:hover {
+    background-color: $pagination-background;
+  }
+
+  .current {
+    background-color: $pagination-background;
+  }
+}

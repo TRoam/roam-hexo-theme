@@ -1,11 +1,4 @@
-html {
-  font-family: 'Roboto', Verdana, "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
-
-$home-title: #fff;
-$font-black: #343434;
-$content-border: #f9f9f9;
+@import 'variables'; 
 
 .home-content {
   background-size: cover;

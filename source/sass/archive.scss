@@ -1,17 +1,4 @@
-$item-post-dot: #ddd;
-$date-color: #888;
-$title-color: #333;
-$link-hover: #26a69a;
-$year-text-color: #222;
-
-
-$year-2: #ab47bc;
-$year-1: #ec407a;
-$year-0: #ffab91;
-$year-5: #69f0ae;
-$year-4: #84ffff;
-$year-3: #2196f3;
-
+@import 'variables'; 
 
 .page-header {
   margin-bottom: 30px;
@@ -101,6 +88,7 @@ $year-3: #2196f3;
   }
 
   .year-badge {
+    font-family: cursive;
     font-size: 12px;
     margin-left: 10px;
     min-width: 3rem;

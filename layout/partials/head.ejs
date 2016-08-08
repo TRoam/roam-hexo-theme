@@ -12,7 +12,7 @@
          } else if (is_category()){
            title = __('title.category') + ": " + page.category;
          } else if (is_tag()){
-           title = __('title.tag') + ": " + page.tag;
+           title = __('title.tags') + ": " + page.tag;
          }
    %>
    <title><% if (title) {%><%= title %> | <% } %><%= config.title %></title>
@@ -25,7 +25,6 @@
   <% } %>
 
   <%- open_graph() %>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="/css/style.css?v=028c63b1" rel="stylesheet">
   <% if (theme.rss){ %>
     <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
