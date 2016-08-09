@@ -1,0 +1,71 @@
+@import 'variables';
+
+@media screen and (min-width: 768px) {
+  .content-post {
+    width: 760px;
+
+    .article-header .post-title {
+      font-size: 32px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .post-header {
+    display: none;
+  }
+
+  .content-post {
+    width: 100%;
+
+    .article-content,
+    .article-header {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .article-header .post-title {
+      font-size: 24px;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .content-post {
+    width: 95%;
+  }
+}
+
+.content-post {
+  margin: 50px auto;
+}
+
+.article-content {
+  h1 { font-size: 28px; }
+  h2 { font-size: 24px; }
+  h3 { font-size: 20px; }
+  h4 { font-size: 16px; }
+  h5 { font-size: 12px; }
+  h6 { font-size: 8px; }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $article-header-color;
+    font-weight: normal;
+    margin: 28px 0 15px;
+  }
+
+  p {
+    color: $article-font-color;
+    font-size: 14px;
+    line-height: 2em;
+    margin-bottom: 20px;
+  }
+
+}
+
+

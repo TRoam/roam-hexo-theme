@@ -1,7 +1,10 @@
+<%- partial('partials/post-header')%>
 
-<article id="post">
-  <h1><%=page.title%></h1>
-  <%-page.content%>
-</article>
+<%- partial('partials/toc') %>
 
-<%-partial('partials/pagination')%>
+<div class="content content-post">
+   <%- partial('partials/article', {post: page, index: false}) %>
+</div>
+
+<%- partial('partials/donation') %>
+
