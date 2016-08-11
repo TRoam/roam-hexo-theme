@@ -46,3 +46,11 @@ post:
 
 # for seo
 keywords: roam 
+
+highlight_theme: night 
+
+node_sass:
+  debug: false
+  outputStyle: nested
+  precision: 5
+  sourceComments: false

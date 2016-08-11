@@ -12,7 +12,7 @@ import postcss from 'gulp-postcss'
 import path from 'path'
 
 const dir = {
-  sass : './source/sass',
+  sass : './source/_sass',
   js : './source/js'
 }
 
@@ -22,7 +22,7 @@ gulp.task('default',['sass','scripts'],() => {
 });
 
 gulp.task('sass', () =>  {
-  return gulp.src('./source/sass/style.scss')
+  return gulp.src('./source/_sass/style.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
       outputStyle: 'compressed'

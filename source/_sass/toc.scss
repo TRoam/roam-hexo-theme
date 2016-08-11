@@ -1,0 +1,30 @@
+.article-toc {
+  .toc-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  ol {
+    line-height: 1.8em;
+    list-style: none;
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .article-toc {
+    font-size: 13px;
+    left: 50%;
+    margin-left: 400px;
+    position: absolute;
+    top: 200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .article-toc {
+    display: none;
+  }
+}

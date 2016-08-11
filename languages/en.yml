@@ -17,6 +17,9 @@ menu:
 
 yearCount: "%d posts"
 
+toc:
+  title: Contents
+
 footer: 
     theme: Theme
 

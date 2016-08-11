@@ -40,8 +40,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.9.1",
-    "jquery": "^3.1.0",
-    "materialize-css": "^0.97.7",
-    "zenscroll": "^3.1.0"
+    "hexo-renderer-scss": "^1.0.2",
+    "jquery": "^3.1.0"
   }
 }
