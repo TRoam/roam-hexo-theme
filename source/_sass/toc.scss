@@ -1,28 +1,45 @@
+@import 'variables';
+
 .article-toc {
   .toc-title {
     font-size: 16px;
     font-weight: bold;
+    margin-left: 10px;
   }
 
   ol {
     line-height: 1.8em;
     list-style: none;
-    padding-left: 0;
+    padding-left: 10px;
+  }
+
+  a {
+    color: $toc-link-color;
+    display: block;
+    overflow: hidden;
+    padding: 5px 0;
+    position: relative;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 980px) {
 
   .article-toc {
     font-size: 13px;
     left: 50%;
     margin-left: 400px;
+    opacity: .8;
     position: absolute;
     top: 200px;
+    width: 220px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 980px) {
 
   .article-toc {
     display: none;

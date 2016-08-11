@@ -3,7 +3,6 @@ import 'babel-polyfill'
 import gulp from 'gulp';
 import sass from 'gulp-sass';
 import autoprefixer from 'gulp-autoprefixer';
-import sourcemaps from 'gulp-sourcemaps';
 import reveasy from 'gulp-rev-easy' 
 import concat from 'gulp-concat'
 import uglify from 'gulp-uglify'
@@ -23,12 +22,10 @@ gulp.task('default',['sass','scripts'],() => {
 
 gulp.task('sass', () =>  {
   return gulp.src('./source/_sass/style.scss')
-    .pipe(sourcemaps.init())
     .pipe(sass({
       outputStyle: 'compressed'
     }).on('error', sass.logError))
     .pipe(concat('style.css'))
-    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./source/css'));
 });
 

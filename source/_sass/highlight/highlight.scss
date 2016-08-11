@@ -20,7 +20,8 @@ $code-border-radius: 3px;
 $grey-dim: grey;
 // Placeholder: %code-block
 %code-block {
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   margin: 20px 0;
   padding: 15px;
   font-size: $code-font-size;

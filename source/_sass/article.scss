@@ -38,7 +38,7 @@
 }
 
 .content-post {
-  margin: 50px auto;
+  margin: 100px auto;
 }
 
 .article-content {
@@ -73,18 +73,22 @@
     position: relative;
   }
 
+  ol,
   ul {
     line-height: 1.8em;
-    list-style: none;
-    padding: 0;
+    padding-left: 20px;
 
+    li {
+      padding-left: 14px;
+      position: relative;
+
+    }
   }
 
-  li {
-    padding-left: 14px;
-    position: relative;
+  ul {
+    list-style: none;
 
-    &:before {
+    li:before {
       background: $pre-highlight-bg;
       border-radius: 50%;
       content: ' ';
