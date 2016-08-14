@@ -1,1 +1,19 @@
+<div class="content content-archive">
+  <%- partial("partials/page-header",{location: 'tag'}) %>
+  <% if (!page.tag){%>
+  <div class="tag-list">
+  <div class="tag-title">
+    <%= __('title.tags')%>
+  </div>
+  <% var tags = site.tags.sort('name');
+       tags.each(function(tag,index){
+          console.log("post:"+tag.posts.length);        
+          console.log("tag:"+tag.length);        
 
+       });
+  %></div>
+  <%} else {%>
+  <div class="archive-list">
+  </div>
+  <%}%>
+</div>

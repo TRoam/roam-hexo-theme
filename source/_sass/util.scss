@@ -26,6 +26,11 @@
   &:after { clear: both; }
 }
 
+
+.footer-bottom {
+  bottom: 1px;
+}
+
 .theme-footer {
   font-size: 12px;
   left: 0;
@@ -35,8 +40,8 @@
   width: 100%;
 
   .theme-link {
-    background: $article-code-bg;
     color: rgba(0, 0, 0, .87);
+    text-decoration: underline;
   }
 }
 

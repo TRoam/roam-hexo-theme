@@ -66,8 +66,12 @@ pre {
     width: auto;
     border: none;
   }
-
-  td {
+  
+  .gutter {
+    padding: 0;
+  }
+  
+  .code {
     border: none;
     padding: 0;
   }

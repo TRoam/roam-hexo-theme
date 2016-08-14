@@ -1,10 +1,11 @@
-<footer class="theme-footer">
+<footer class="theme-footer <% if( is_home()){%><%= 'footer-bottom' %><%}%>">
   <span class="name">
     <% var current = date(Date.now(), "YYYY") %>
     &copy; 
     <span ><%= current %></span>
     <span class="author" ><%=  config.author %></span>
   </span>
+   |
   <span class="theme-info">
     <a class="theme-link" href="https://hexo.io/">Hexo </a>
     <%= __('footer.theme') %>
