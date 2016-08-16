@@ -1,0 +1,19 @@
+.tag-list {
+  margin-left: -20px;
+  margin-top: 20px;
+  position: relative;
+
+  .tag-title {
+    position: absolute;
+    line-height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #444;
+  }
+  
+  .tags {
+    margin-left: 50px;
+  }
+}
+
+

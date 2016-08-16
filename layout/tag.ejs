@@ -5,13 +5,16 @@
   <div class="tag-title">
     <%= __('title.tags')%>
   </div>
+  <div class="tags">
   <% var tags = site.tags.sort('name');
-       tags.each(function(tag,index){
-          console.log("post:"+tag.posts.length);        
-          console.log("tag:"+tag.length);        
-
-       });
+       tags.each(function(tag,index){ console.log(tag); %>
+       <a class="tag-item">
+       <span class="tag-name"><%= tag.name %></span>
+       <span class="tag-count"><%= tag.length%></span>
+       </a>
+      <% });
   %></div>
+  </div>
   <%} else {%>
   <div class="archive-list">
   </div>
